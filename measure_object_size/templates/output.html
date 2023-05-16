@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/css/bootstrap.css') }}" />
+    <title>Output</title>
+</head>
+
+<body>
+    <h1>OUTPUT IMAGE</h1>
+    <div class="slider_section detail-box btn-box">
+        <img src="/static/{{output_image}}" style="size: 50px;">
+        <h1>Image Saved!</h1>
+        <a href="/upload"
+            style="background-color: orangered; color:white; padding:10px; text-decoration:none; margin-left:40px; border-radius:10px">
+            Upload
+            new Image </a>
+        <a href="/"
+            style="background-color: orangered; color:white; padding:10px; text-decoration:none; margin-left:40px; border-radius:10px">
+            Return to Homepage </a>
+    </div>
+</body>
+
+</html>
